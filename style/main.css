@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #2c3e50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #3498db,
+        #2c3e50
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #3498db,
+        #2c3e50
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.randomButton {
+    padding: 5px;
+    font-size: 20px;
+    background: #fc00ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #00dbde,
+        #fc00ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #00dbde,
+        #fc00ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: none;
+    border-radius: 5px;
+}
+
+.meme-image {
+    max-height: 60vh;
+    max-width: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.topText {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.bottomText {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.memeText {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+        -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+        -2px 0px 0 #000, 2px 2px 5px #000;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.topInput {
+    border: none;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.bottomInput {
+    margin-top: 8px;
+    padding: 5px;
+}
+
+.downloadButton {
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 8px;
+}
+/*
+<div
+      v-bind:class="index % 2 == 0 ? 'c1': 'c2'"
+      class="c"
+      :key="item"
+      v-for=" (item, index) in list"
+    >
+      <div @click="remove(item)">{{item}}</div>
+    </div>
+*/
